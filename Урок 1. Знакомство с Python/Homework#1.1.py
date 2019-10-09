@@ -3,7 +3,14 @@
 Буду рад получить рекомендации:)
 """
 
-seconds = int(input("Введите время в секундах - "))
+seconds = input("Введите время в секундах - ")
+while True:
+    if seconds.isdigit():
+        seconds = int(seconds)
+        break
+    else:
+        seconds = input("Неверный ввод. Необходимо ввести целое число - ")
+
 h = seconds // 3600
 m = (seconds % 3600) // 60
 s = seconds % 60
@@ -19,5 +26,6 @@ if len(m_str) == 1:
 if len(s_str) == 1:
     s_str = '0' + s_str
 
+print()
 print("Итоговое время:")
 print("%s:%s:%s" % (h_str, m_str, s_str))
