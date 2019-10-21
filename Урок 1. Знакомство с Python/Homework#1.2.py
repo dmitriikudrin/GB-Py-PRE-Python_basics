@@ -13,7 +13,7 @@ while True:
     if user_number.lower() == "exit":
         print("Работа программы завершена.")
         break
-    #
+    # Вычисление n + nn + nnn
     elif user_number.isdigit():
         user_number = int(user_number)
         # Вывод результата
