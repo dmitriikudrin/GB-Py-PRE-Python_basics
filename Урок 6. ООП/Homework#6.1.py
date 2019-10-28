@@ -10,27 +10,25 @@ from time import sleep
 
 
 class TrafficLight:
-    # Цвет в текущий момент
-    __color = None
-    # Варианты цветов
-    __colors = ["red", "yellow", "green", "yellow"]
+    """Класс Светофор"""
 
-    # Метод переключения цвета
+    def __init__(self):
+        """Когструктор класса"""
+        __color = None
+        __colors = ["red", "yellow", "green", "yellow"]
+
     def running(self, count=10):
-
+        """Метод переключения цвета"""
         # Переключение цвета
         for i in range(count):
             for color in self.__colors:
-
                 # Определние цвета
                 self.__color = color
-
                 # Определение времени переключения
                 if color == "red" or color == "green":
                     timing = 7
                 elif color == "yellow":
                     timing = 2
-
                 # Вывод цвета с обратным отсчетом
                 for j in range(timing, 0, -1):
                     line = f"\r{self.__color} {j}"
@@ -38,6 +36,6 @@ class TrafficLight:
                     sleep(1)
 
 
-# СОздание экземпляра и вызов метода
+# Создание экземпляра и вызов метода
 my_TrafficLight = TrafficLight()
 my_TrafficLight.running()
