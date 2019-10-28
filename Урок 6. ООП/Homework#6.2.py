@@ -30,8 +30,9 @@ class Road:
         # Насколько корректно создавать атрибут в методе?
         self._mass = self._length * self._width * \
                      self.__weight * self.__height
-        return self.__mass  # В тоннах
+        return self._mass  # В тоннах
 
 
 # Экземпляр класса
 my_road = Road(length=5000, width=20)
+print(my_road.mass_of_asphalt())
