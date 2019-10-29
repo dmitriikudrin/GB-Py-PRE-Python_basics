@@ -11,17 +11,17 @@ from time import sleep
 
 class TrafficLight:
     """Класс Светофор"""
+    __colors = ["red", "yellow", "green", "yellow"]
 
     def __init__(self):
         """Когструктор класса"""
         __color = None
-        __colors = ["red", "yellow", "green", "yellow"]
 
     def running(self, count=10):
         """Метод переключения цвета"""
         # Переключение цвета
         for i in range(count):
-            for color in self.__colors:
+            for color in TrafficLight.__colors:
                 # Определние цвета
                 self.__color = color
                 # Определение времени переключения
