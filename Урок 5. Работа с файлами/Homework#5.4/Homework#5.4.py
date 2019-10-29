@@ -22,7 +22,7 @@ if __name__ == "__main__":
                 as file_input:
             with open("Homework#5.4-output.txt", "w", encoding="utf-8") \
                     as file_output:
-                for line in file_input.readlines():
+                for line in file_input:
                     temp_list = line.split()
                     # Запись в файл с заменой числительного
                     print(f"{dict_num[temp_list[0].lower()].title()} "

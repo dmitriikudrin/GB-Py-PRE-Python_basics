@@ -32,7 +32,7 @@ if __name__ == "__main__":
         with open("Homework#5.7-input.txt", "r", encoding="utf-8") as file:
             profit_count = 0
             profit_sum = 0
-            for line in file.readlines():
+            for line in file:
                 firm_list = line.split()
                 profit = int(firm_list[2]) - int(firm_list[3])
                 stats_list[0][firm_list[0]] = profit

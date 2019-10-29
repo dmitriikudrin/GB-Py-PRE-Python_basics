@@ -8,7 +8,7 @@ if __name__ == "__main__":
         with open("Homework#5.2.txt", "r", encoding="utf-8") as file:
             line_count = 0
             words_count = 0
-            for line in file.readlines():
+            for line in file:
                 line_count += 1
                 line_len = len(line.split())
                 words_count += line_len

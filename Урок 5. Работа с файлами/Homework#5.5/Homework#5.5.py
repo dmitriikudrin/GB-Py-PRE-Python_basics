@@ -18,7 +18,7 @@ if __name__ == "__main__":
     num_sum = 0
     try:
         with open("Homework#5.5.txt", "r") as file:
-            for line in file.readlines():
+            for line in file:
                 num_sum += int(line[:-1])
     except IOError as e:
         print(f"Произошла ошибка в вода вывода:\n{e}:")

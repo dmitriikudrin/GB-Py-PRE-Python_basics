@@ -6,14 +6,13 @@
 предмета и общее количество занятий по нему. Вывести словарь на экран.
 """
 
-# Понимаю, что намудрил в решении, но пока не знаю как сделать по другому
 
 sub_dict = dict()
 
 if __name__ == "__main__":
     try:
         with open("Homework#5.6.txt", "r", encoding="utf-8") as file:
-            for line in file.readlines():
+            for line in file:
                 line_list = line.split()
                 sub_dict[line_list[0]] = 0
 
@@ -40,3 +39,5 @@ if __name__ == "__main__":
                 print(f"Количество занятий по предмету \"{key}\" - {value}")
     except IOError as e:
         print(f"Произошла ошибка в вода вывода:\n{e}:")
+    except ValueError as e:
+        print(f"Произошла ошибка приведения типа - невверное значение:\n{e}:")

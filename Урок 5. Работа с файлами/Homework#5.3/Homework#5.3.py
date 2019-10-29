@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
             # Вывод списка всех сотрудников
             print("Список сотрудников:")
-            for idx, line in enumerate(file.readlines()):
+            for idx, line in enumerate(file):
                 emp = line.split()
                 emp_count += 1
                 emp_salary = int(emp[1])
