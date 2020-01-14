@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../Coursera/Coursera_Python_programming_basics/.idea/Coursera_Python_programming_basics.iml" filepath="$PROJECT_DIR$/../../Coursera/Coursera_Python_programming_basics/.idea/Coursera_Python_programming_basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/GB-PRE-Python_basics.iml" filepath="$PROJECT_DIR$/.idea/GB-PRE-Python_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../GB-Py-ADD-Python/.idea/GB-Py-ADD-Python.iml" filepath="$PROJECT_DIR$/../GB-Py-ADD-Python/.idea/GB-Py-ADD-Python.iml" />
     </modules>
   </component>
 </project>
